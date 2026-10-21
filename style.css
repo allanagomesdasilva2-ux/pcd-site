@@ -1,0 +1,331 @@
+
+/* CONFIGURAÇÕES GERAIS DO SITE */
+body {
+    background-color: #cdb6f1;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #351653;
+}
+
+/* CABEÇALHO DO JORNAL */
+.titulo-inclusao {
+    text-align: center;
+    padding: 30px 15px;
+    color: #6A35A0;
+}
+
+.titulo-inclusao h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(106, 53, 160, 0.15);
+}
+
+.titulo-inclusao p {
+    font-size: 16px;
+    color: #4B267A;
+    margin-bottom: 0;
+}
+
+/* CARROSSEL DE IMAGENS */
+#carouselExample {
+    max-width: 900px;
+    margin: 20px auto 40px;
+    padding: 0 15px;
+}
+
+#carouselExample .carousel-inner {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(75, 38, 122, 0.20);
+}
+
+#carouselExample img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* TEXTO SOBRE INCLUSÃO */
+.texto-inclusao {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #f8f2ff;
+    border-radius: 25px;
+    border-left: 7px solid #8e44ad;
+    box-shadow: 0 5px 15px rgba(75, 38, 122, 0.15);
+    text-align: center;
+}
+
+/* TÍTULO DO TEXTO */
+.texto-inclusao h2 {
+    color: #6A35A0;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* PARÁGRAFOS */
+.texto-inclusao p {
+    color: #4B267A;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+/* FRASE FINAL */
+.texto-inclusao h3 {
+    color: #8e44ad;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+/* EFEITO NOS BOTÕES DO CARROSSEL */
+#carouselExample .carousel-control-prev,
+#carouselExample .carousel-control-next {
+    width: 10%;
+}
+
+/* AJUSTES PARA CELULARES */
+@media (max-width: 600px) {
+
+    .titulo-inclusao {
+        padding: 25px 12px;
+    }
+
+    .titulo-inclusao h1 {
+        font-size: 30px;
+    }
+
+    .titulo-inclusao p {
+        font-size: 14px;
+    }
+
+    #carouselExample {
+        margin: 15px auto 30px;
+    }
+
+    #carouselExample img {
+        height: 250px;
+    }
+
+    .texto-inclusao {
+        margin: 25px 15px;
+        padding: 25px 18px;
+    }
+
+    .texto-inclusao h2 {
+        font-size: 24px;
+    }
+
+    .texto-inclusao p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .texto-inclusao h3 {
+        font-size: 17px;
+    }
+}
+/* SEÇÃO DE INFORMAÇÕES */
+.informacoes-inclusao {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 25px 20px;
+}
+
+/* TÍTULO DA SEÇÃO */
+.informacoes-inclusao > h2 {
+    text-align: center;
+    color: #6A35A0;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+
+/* ORGANIZAÇÃO DOS CARTÕES */
+.cartoes-inclusao {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* CARTÕES DE TEXTO */
+.cartao-texto {
+    background-color: #f8f2ff;
+    padding: 25px;
+    border-radius: 20px;
+    border-top: 5px solid #8e44ad;
+    box-shadow: 0 5px 15px rgba(75, 38, 122, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.cartao-texto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(75, 38, 122, 0.20);
+}
+
+/* TÍTULOS DOS CARTÕES */
+.cartao-texto h3 {
+    color: #6A35A0;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* PARÁGRAFOS DOS CARTÕES */
+.cartao-texto p {
+    color: #4B267A;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+/* AJUSTE PARA CELULARES */
+@media (max-width: 700px) {
+    .informacoes-inclusao {
+        margin: 25px auto;
+        padding: 15px;
+    }
+
+    .informacoes-inclusao > h2 {
+        font-size: 26px;
+    }
+
+    .cartoes-inclusao {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .cartao-texto {
+        padding: 20px;
+    }
+
+    .cartao-texto h3 {
+        font-size: 19px;
+    }
+
+    .cartao-texto p {
+        font-size: 14px;
+    }
+}
+/* SEÇÃO DE SITES */
+.sites-inclusao {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 25px 20px;
+}
+
+/* TÍTULO DA SEÇÃO */
+.sites-inclusao h2 {
+    color: #6A35A0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+/* DESCRIÇÃO */
+.descricao-sites {
+    color: #4B267A;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+/* ORGANIZAÇÃO DOS CARDS */
+.grade-sites {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* CADA CARD */
+.card-site {
+    background-color: #f8f2ff;
+    padding: 28px;
+    border-radius: 22px;
+    text-align: center;
+    border: 2px solid #e4d2fa;
+    box-shadow: 0 5px 15px rgba(75, 38, 122, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.card-site:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(75, 38, 122, 0.20);
+}
+
+/* ÍCONES */
+.icone-site {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+/* TÍTULOS DOS CARDS */
+.card-site h3 {
+    color: #6A35A0;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* TEXTOS */
+.card-site p {
+    color: #4B267A;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+/* BOTÕES DOS LINKS */
+.botao-site {
+    display: inline-block;
+    background-color: #6A35A0;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.botao-site:hover {
+    background-color: #4B267A;
+    color: white;
+}
+
+/* ACESSIBILIDADE: FOCO PELO TECLADO */
+.botao-site:focus-visible {
+    outline: 3px solid #8e44ad;
+    outline-offset: 4px;
+}
+
+/* CELULARES */
+@media (max-width: 700px) {
+    .sites-inclusao {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .sites-inclusao h2 {
+        font-size: 25px;
+    }
+
+    .grade-sites {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-site {
+        padding: 23px;
+    }
+}
